@@ -26,14 +26,18 @@ namespace helper {
 	}
 	
 	void formatOutput(std::string& templateStr, const std::string& name, const std::string& phrase) {
-    	unsigned long pos;
+    	std::size_t pos;
     
     	while ((pos = templateStr.find(config::nameTag)) != std::string::npos) {
         	templateStr.replace(pos, config::nameTag.length(), name);
+         	pos += name.length();
      	}
+     
+     	pos = 0;
 
     	while ((pos = templateStr.find(config::phraseTag)) != std::string::npos) {
         	templateStr.replace(pos, config::phraseTag.length(), phrase);
+         	pos += phrase.length();
     	}
 	}
 }

@@ -26,7 +26,7 @@ namespace helper {
 	}
 	
 	void formatOutput(std::string& templateStr, const std::string& name, const std::string& phrase) {
-    	std::size_t pos;
+    	std::size_t pos = 0;
     
     	while ((pos = templateStr.find(config::nameTag, pos)) != std::string::npos) {
         	templateStr.replace(pos, config::nameTag.length(), name);

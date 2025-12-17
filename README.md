@@ -67,7 +67,7 @@ If you are on an operating system other than Linux x86-64, or prefer to compile 
 
 ```bash
 # 1. Clone the github repository
-$ git clone https://github.com/BarelySyntax/useless-free-fuck-utility-v2.git
+$ git clone https://github.com/CompliantCompiler-CC/useless-free-fuck-utility-v2.git
 $ cd useless-free-fuck-utility-v2
 
 # 2. Create a build directory (standard practice)
